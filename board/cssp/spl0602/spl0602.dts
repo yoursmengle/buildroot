@@ -120,7 +120,7 @@
 
 &clks {
 	assigned-clocks = <&clks IMX6UL_CLK_PLL4_AUDIO_DIV>;
-	assigned-clock-rates = <786432000>;
+	assigned-clock-rates = <786432000>;   // 900000000 jhzhou ???
 };
 
 /*
@@ -160,17 +160,15 @@
 };*/
 
 	&i2c2 {
-
-                clock_frequency = <100000>;
+        clock_frequency = <100000>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_i2c>;
-                status = "disabled";
+        status = "disabled";
 
 		touchscreen@70 {
 			compatible = "focaltech,focaltech_ts";
 			reg = <0x38>;
 		};
-
 	};
 
 &fec2 {
@@ -189,8 +187,6 @@
 			compatible = "ethernet-phy-ieee802.3-c22";
 			reg = <1>;
 		};
-
-
 	};
 };
 
@@ -220,7 +216,7 @@
 	pinctrl-0 = <&pinctrl_lcdif_dat
 		     &pinctrl_lcdif_ctrl>;
 	display = <&display0>;
-	status = "okay";
+	status = "disabled";
 
 	display0: display {
 		bits-per-pixel = <24>;
