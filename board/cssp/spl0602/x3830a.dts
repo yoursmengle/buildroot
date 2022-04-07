@@ -1,22 +1,26 @@
-// SPDX-License-Identifier: (GPL-2.0 OR MIT)
-//
-// Copyright (C) 2016 Freescale Semiconductor, Inc.
+/*
+ * Copyright (C) 2015 Freescale Semiconductor, Inc.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
 
 /dts-v1/;
-#include <dt-bindings/input/input.h>
-#include "imx6ull.dtsi"
 
+#include <dt-bindings/input/input.h>
+#include "imx6g2c-base.dtsi"
 
 / {
-    model = "spl0602";
-    compatible = "fsl,imx6ull-14x14-evk", "fsl,imx6ull";
+    model = "sonnepower lcd 7";
+    compatible = "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
 
 	chosen {
 		stdout-path = &uart5;
 	};
 
 	memory {
-		reg = <0x80000000 0x20000000>; /* 512M */
+		reg = <0x80000000 0x10000000>; /* 256M */
 	};
 
     reserved-memory {
