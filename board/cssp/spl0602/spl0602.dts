@@ -189,7 +189,7 @@
 		};
 	};
 };
-
+/*
 &flexcan1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_flexcan1>;
@@ -201,6 +201,7 @@
 	pinctrl-0 = <&pinctrl_flexcan2>;
 	status = "okay";
 };
+*/
 
 &gpc {
 	fsl,cpu_pupscr_sw2iso = <0x1>;
