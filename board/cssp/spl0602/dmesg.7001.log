@@ -1,0 +1,225 @@
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.1.15-rt18+ (jhzhou@DESKTOP-G2GDN65) (gcc version 5.5.0 (Linaro GCC 5.5-2017.10) ) #19 PREEMPT RT Sat Jan 16 11:58:01 CST 2021
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 ULL 14x14 EVK Board
+[    0.000000] Reserved memory: created CMA memory pool at 0x8c000000, size 320 MiB
+[    0.000000] Reserved memory: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] On node 0 totalpages: 131072
+[    0.000000] free_area_init_node: node 0, pgdat 808b1160, node_mem_map 8bb57000
+[    0.000000]   Normal zone: 1024 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 131072 pages, LIFO batch:31
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 130048
+[    0.000000] Kernel command line: console=ttymxc0,115200 initrd=0x83800000,64M root=/dev/ram0  rw quiet boot_flag=ramdisk
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 116396K/524288K available (6007K kernel code, 368K rwdata, 2164K rodata, 328K init, 454K bss, 80212K reserved, 327680K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000]     vmalloc : 0xa0800000 - 0xff000000   (1512 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xa0000000   ( 512 MB)
+[    0.000000]     pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+[    0.000000]     modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+[    0.000000]       .text : 0x80008000 - 0x8080309c   (8173 kB)
+[    0.000000]       .init : 0x80804000 - 0x80856000   ( 328 kB)
+[    0.000000]       .data : 0x80856000 - 0x808b22e0   ( 369 kB)
+[    0.000000]        .bss : 0x808b5000 - 0x80926ac8   ( 455 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000]  Additional per-CPU info printed with stalls.
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] mxc_clocksource_init 24000000
+[    0.000000] Switching to timer-based delay loop, resolution 41ns
+[    0.000016] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000044] clocksource mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.002043] Console: colour dummy device 80x30
+[    0.002335] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+[    0.002343] pid_max: default: 32768 minimum: 301
+[    0.002507] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002521] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.003811] CPU: Testing write buffer coherency: ok
+[    0.004288] Setting up static identity map for 0x80008200 - 0x80008258
+[    0.007839] devtmpfs: initialized
+[    0.024106] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.024987] clocksource jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.050178] pinctrl core: initialized pinctrl subsystem
+[    0.052620] NET: Registered protocol family 16
+[    0.072590] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.079395] cpuidle: using governor ladder
+[    0.085513] cpuidle: using governor menu
+[    0.127268] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.127302] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.130678] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.131219] imx6ul-pinctrl 2290000.iomuxc-snvs: initialized IMX pinctrl driver
+[    0.159693] mxs-dma 1804000.dma-apbh: initialized
+[    0.163789] vgaarb: loaded
+[    0.165764] SCSI subsystem initialized
+[    0.166421] usbcore: registered new interface driver usbfs
+[    0.166717] usbcore: registered new interface driver hub
+[    0.166984] usbcore: registered new device driver usb
+[    0.169252] i2c i2c-1: IMX I2C adapter registered
+[    0.169301] i2c i2c-1: can't use DMA
+[    0.170436] i2c i2c-3: IMX I2C adapter registered
+[    0.170483] i2c i2c-3: can't use DMA
+[    0.170692] Linux video capture interface: v2.00
+[    0.170976] pps_core: LinuxPPS API ver. 1 registered
+[    0.170999] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.171075] PTP clock support registered
+[    0.172315] Advanced Linux Sound Architecture Driver Initialized.
+[    0.176165] Switched to clocksource mxc_timer1
+[    0.202598] NET: Registered protocol family 2
+[    0.204115] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.204403] TCP bind hash table entries: 4096 (order: 4, 98304 bytes)
+[    0.204744] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.204895] UDP hash table entries: 256 (order: 2, 16384 bytes)
+[    0.204975] UDP-Lite hash table entries: 256 (order: 2, 16384 bytes)
+[    0.205622] NET: Registered protocol family 1
+[    0.206472] RPC: Registered named UNIX socket transport module.
+[    0.206506] RPC: Registered udp transport module.
+[    0.206522] RPC: Registered tcp transport module.
+[    0.206539] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.206589] PCI: CLS 0 bytes, default 64
+[    0.207075] Trying to unpack rootfs image as initramfs...
+[    0.208745] rootfs image is not initramfs (no cpio magic); looks like an initrd
+[    0.671846] Freeing initrd memory: 65536K (83800000 - 87800000)
+[    0.674511] imx rpmsg driver is registered.
+[    0.677103] Bus freq driver module loaded
+[    0.679362] futex hash table entries: 256 (order: 1, 8192 bytes)
+[    0.701301] NFS: Registering the id_resolver key type
+[    0.701425] Key type id_resolver registered
+[    0.701445] Key type id_legacy registered
+[    0.711603] alg: No test for stdrng (krng)
+[    0.712873] io scheduler noop registered
+[    0.712923] io scheduler deadline registered
+[    0.713557] io scheduler cfq registered (default)
+[    0.714604] imx-weim 21b8000.weim: Driver registered.
+[    0.721499] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.721716] imx-sdma 20ec000.sdma: loaded firmware 3.3
+[    0.729434] imx-sdma 20ec000.sdma: initialized
+[    0.732067] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 18, base_baud = 5000000) is a IMX
+[    0.733038] console [ttymxc0] enabled
+[    0.735380] 21fc000.serial: ttymxc5 at MMIO 0x21fc000 (irq = 221, base_baud = 5000000) is a IMX
+[    0.737027] 2288000.serial: ttymxc7 at MMIO 0x2288000 (irq = 226, base_baud = 5000000) is a IMX
+[    0.774401] imx-rng 2284000.rngb: iMX RNG Registered.
+[    0.774967] imx sema4 driver is registered.
+[    0.800944] brd: module loaded
+[    0.813750] loop: module loaded
+[    0.815636] tun: Universal TUN/TAP device driver, 1.6
+[    0.815662] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.816095] vcan: Virtual CAN interface driver
+[    0.816136] CAN device driver interface
+[    0.819370] flexcan 2090000.can: device registered (reg_base=a0988000, irq=22)
+[    0.821735] flexcan 2094000.can: device registered (reg_base=a0990000, irq=23)
+[    0.824388] 2188000.ethernet supply phy not found, using dummy regulator
+[    0.852331] pps pps0: new PPS source ptp0
+[    0.852859] fec 2188000.ethernet (unnamed net_device) (uninitialized): Invalid MAC address: 00:00:00:00:00:00
+[    0.862883] fec 2188000.ethernet (unnamed net_device) (uninitialized): Using random MAC address: 9a:86:c4:7e:51:d3
+[    0.864105] libphy: fec_enet_mii_bus: probed
+[    0.867394] fec 2188000.ethernet eth0: registered PHC device 0
+[    0.868910] PPP generic driver version 2.4.2
+[    0.869964] usbcore: registered new interface driver rtl8192cu
+[    0.870298] usbcore: registered new interface driver rt2800usb
+[    0.870344] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.870380] ehci-pci: EHCI PCI platform driver
+[    0.870561] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.870919] usbcore: registered new interface driver cdc_wdm
+[    0.871134] usbcore: registered new interface driver usb-storage
+[    0.871658] usbcore: registered new interface driver usbserial
+[    0.871826] usbcore: registered new interface driver usbserial_generic
+[    0.871948] usbserial: USB Serial support registered for generic
+[    0.872094] usbcore: registered new interface driver option
+[    0.872361] usbserial: USB Serial support registered for GSM modem (1-port)
+[    0.872539] usbcore: registered new interface driver usb_ehset_test
+[    0.875378] 2184800.usbmisc supply vbus-wakeup not found, using dummy regulator
+[    0.877027] 2184000.usb supply vbus not found, using dummy regulator
+[    0.880910] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.881011] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    0.887221] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.889542] hub 1-0:1.0: USB hub found
+[    0.889666] hub 1-0:1.0: 1 port detected
+[    0.891732] 2184200.usb supply vbus not found, using dummy regulator
+[    0.895271] ci_hdrc ci_hdrc.1: EHCI Host Controller
+[    0.895363] ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+[    0.901227] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+[    0.903450] hub 2-0:1.0: USB hub found
+[    0.903576] hub 2-0:1.0: 1 port detected
+[    0.905749] i2c /dev entries driver
+[    0.907891] uvcvideo: Unable to create debugfs directory
+[    0.908273] usbcore: registered new interface driver uvcvideo
+[    0.908297] USB Video Class driver (1.1.1)
+[    0.908335] gspca_main: v2.14.0 registered
+[    0.908526] usbcore: registered new interface driver ov534
+[    0.910919] imx2-wdt 20bc000.wdog: timeout 60 sec (nowayout=0)
+[    0.912357] sdhci: Secure Digital Host Controller Interface driver
+[    0.912386] sdhci: Copyright(c) Pierre Ossman
+[    0.912422] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.914526] /soc/aips-bus@02100000/usdhc@02194000: voltage-ranges unspecified
+[    0.914570] sdhci-esdhc-imx 2194000.usdhc: could not get ultra high speed state, work on normal mode
+[    0.914940] sdhci-esdhc-imx 2194000.usdhc: No vmmc regulator found
+[    0.914972] sdhci-esdhc-imx 2194000.usdhc: No vqmmc regulator found
+[    0.946330] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.993891] alg: hash: Test 1 failed for sha1-dcp
+[    0.998663] 00000000: 17 96 50 d4 5b 4d 85 b8 20 b6 bf df 27 55 a4 ab
+[    0.998689] 00000010: 45 20 11 ea
+[    0.999278] alg: hash: Test 1 failed for sha256-dcp
+[    1.004271] 00000000: 5d 90 3a a4 12 0b e6 13 83 5c 06 8d d2 5d 2f 94
+[    1.004299] 00000010: 93 09 46 43 a6 1f 2e d1 9a 37 20 a7 06 05 0f c6
+[    1.005133] usbcore: registered new interface driver usbhid
+[    1.005393] usbhid: USB HID core driver
+[    1.011001] usbcore: registered new interface driver snd-usb-audio
+[    1.011434] NET: Registered protocol family 26
+[    1.011902] NET: Registered protocol family 17
+[    1.011965] can: controller area network core (rev 20120528 abi 9)
+[    1.012125] NET: Registered protocol family 29
+[    1.012339] can: raw protocol (rev 20120528)
+[    1.012384] can: broadcast manager protocol (rev 20120528 t)
+[    1.012443] can: netlink gateway (rev 20130117) max_hops=1
+[    1.012959] 8021q: 802.1Q VLAN Support v1.8
+[    1.013050] lib80211: common routines for IEEE802.11 drivers
+[    1.013071] lib80211_crypt: registered algorithm 'NULL'
+[    1.013108] lib80211_crypt: registered algorithm 'WEP'
+[    1.013141] lib80211_crypt: registered algorithm 'CCMP'
+[    1.013345] lib80211_crypt: registered algorithm 'TKIP'
+[    1.013749] Key type dns_resolver registered
+[    1.021485] mmc1: MAN_BKOPS_EN bit is not set
+[    1.031851] ltemodule-pwr: disabling
+[    1.031883] can-3v3: disabling
+[    1.032300] ALSA device list:
+[    1.032322]   No soundcards found.
+[    1.032926] RAMDISK: gzip image found at block 0
+[    1.046315] mmc1: new DDR MMC card at address 0001
+[    1.049342] mmcblk1: mmc1:0001 Q2J54A 3.58 GiB
+[    1.050341] mmcblk1boot0: mmc1:0001 Q2J54A partition 1 16.0 MiB
+[    1.052338] mmcblk1boot1: mmc1:0001 Q2J54A partition 2 16.0 MiB
+[    1.054293] mmcblk1rpmb: mmc1:0001 Q2J54A partition 3 512 KiB
+[    1.056270]  mmcblk1: p1 p2 p3 p4
+[    2.087793] EXT2-fs (ram0): warning: mounting unchecked fs, running e2fsck is recommended
+[    2.087908] VFS: Mounted root (ext2 filesystem) on device 1:0.
+[    2.088125] devtmpfs: mounted
+[    2.088998] Freeing unused kernel memory: 328K (80804000 - 80856000)
+[    2.187493] EXT4-fs (mmcblk1p2): mounted filesystem with ordered data mode. Opts: (null)
+[    2.458211] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[    2.576990] option 1-1:1.2: GSM modem (1-port) converter detected
+[    2.578092] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[    2.579404] option 1-1:1.3: GSM modem (1-port) converter detected
+[    2.580052] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[    2.581718] option 1-1:1.4: GSM modem (1-port) converter detected
+[    2.582544] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[    2.585725] EXT4-fs (mmcblk1p3): recovery complete
+[    2.587438] EXT4-fs (mmcblk1p3): mounted filesystem with ordered data mode. Opts: (null)
+[    3.723942] EXT4-fs (mmcblk1p4): recovery complete
+[    3.725410] EXT4-fs (mmcblk1p4): mounted filesystem with ordered data mode. Opts: (null)
+[    4.215398] fec 2188000.ethernet eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=2188000.ethernet:00, irq=-1)
+[    5.300578] random: codesyscontrol urandom read with 101 bits of entropy available
+[    5.782116] random: nonblocking pool is initialized
+[   11.820831] flexcan 2094000.can can1: writing ctrl=0x07292005
+[   11.908152] flexcan 2090000.can can0: writing ctrl=0x07292005

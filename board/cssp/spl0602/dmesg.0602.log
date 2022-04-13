@@ -1,0 +1,239 @@
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 5.15.30 (jhzhou@DESKTOP-OPMN008) (arm-linux-gnueabihf-gcc (GCC) 11.2.1 20220205 [releases/gcc-11 revision 202be9f69a5887c7263598daf5c68a16aec06148], GNU ld (Linaro_Binutils-2022.02) 2.37.20220122) #1 SMP Wed Apr 13 10:02:11 CST 2022
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Freescale i.MX6 ULL 14x14 EVK Board
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] Reserved memory: created CMA memory pool at 0x8c000000, size 320 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] percpu: Embedded 16 pages/cpu s36204 r8192 d21140 u65536
+[    0.000000] pcpu-alloc: s36204 r8192 d21140 u65536 alloc=16*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130048
+[    0.000000] Kernel command line: console=ttymxc0,115200 initrd=0x83800000,32M root=/dev/ram0 rw quiet boot_flag=ramdisk init=/sbin/bootchartd
+[    0.000000] Unknown kernel command line parameters "boot_flag=ramdisk", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 128312K/524288K available (14336K kernel code, 2055K rwdata, 5088K rodata, 1024K init, 6627K bss, 68296K reserved, 327680K cma-reserved, 0K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] trace event string verifier disabled
+[    0.000000] Running RCU self tests
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu:     RCU event tracing is enabled.
+[    0.000000] rcu:     RCU lockdep checking is enabled.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] random: get_random_bytes called from start_kernel+0x480/0x6cc with crng_init=0
+[    0.000000] Switching to timer-based delay loop, resolution 41ns
+[    0.000003] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000067] clocksource: mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.004145] Console: colour dummy device 80x30
+[    0.004283] Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+[    0.004316] ... MAX_LOCKDEP_SUBCLASSES:  8
+[    0.004349] ... MAX_LOCK_DEPTH:          48
+[    0.004380] ... MAX_LOCKDEP_KEYS:        8192
+[    0.004411] ... CLASSHASH_SIZE:          4096
+[    0.004440] ... MAX_LOCKDEP_ENTRIES:     32768
+[    0.004470] ... MAX_LOCKDEP_CHAINS:      65536
+[    0.004500] ... CHAINHASH_SIZE:          32768
+[    0.004529]  memory used by lock dependency info: 4061 kB
+[    0.004556]  memory used for stack traces: 2112 kB
+[    0.004587]  per task-struct memory footprint: 1536 bytes
+[    0.004875] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.004971] pid_max: default: 32768 minimum: 301
+[    0.005724] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.005810] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.016557] CPU: Testing write buffer coherency: ok
+[    0.019525] CPU0: update cpu_capacity 1024
+[    0.019604] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.027763] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.029783] rcu: Hierarchical SRCU implementation.
+[    0.036276] smp: Bringing up secondary CPUs ...
+[    0.036343] smp: Brought up 1 node, 1 CPU
+[    0.036395] SMP: Total of 1 processors activated (48.00 BogoMIPS).
+[    0.036444] CPU: All CPU(s) started in SVC mode.
+[    0.044079] devtmpfs: initialized
+[    0.129134] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.132412] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.132595] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.158490] pinctrl core: initialized pinctrl subsystem
+[    0.175367] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.260215] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.278416] thermal_sys: Registered thermal governor 'step_wise'
+[    0.278979] cpuidle: using governor menu
+[    0.279283] CPU identified as i.MX6ULL, silicon rev 1.1
+[    0.395837] vdd3p0: supplied by regulator-dummy
+[    0.401688] cpu: supplied by regulator-dummy
+[    0.410210] vddsoc: supplied by regulator-dummy
+[    0.539973] No ATAGs?
+[    0.541043] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.541175] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.562391] imx6ul-pinctrl 20e0000.pinctrl: initialized IMX pinctrl driver
+[    0.568095] imx6ul-pinctrl 2290000.iomuxc-snvs: initialized IMX pinctrl driver
+[    0.705441] Kprobes globally optimized
+[    0.910227] mxs-dma 1804000.dma-apbh: initialized
+[    0.933774] vgaarb: loaded
+[    0.940738] SCSI subsystem initialized
+[    0.942739] libata version 3.00 loaded.
+[    0.946087] usbcore: registered new interface driver usbfs
+[    0.946976] usbcore: registered new interface driver hub
+[    0.947444] usbcore: registered new device driver usb
+[    0.953404] mc: Linux media interface: v0.10
+[    0.953834] videodev: Linux video capture interface: v2.00
+[    0.956061] pps_core: LinuxPPS API ver. 1 registered
+[    0.956121] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.956313] PTP clock support registered
+[    0.963539] Advanced Linux Sound Architecture Driver Initialized.
+[    0.974443] Bluetooth: Core ver 2.22
+[    0.974872] NET: Registered PF_BLUETOOTH protocol family
+[    0.974925] Bluetooth: HCI device and connection manager initialized
+[    0.975253] Bluetooth: HCI socket layer initialized
+[    0.975362] Bluetooth: L2CAP socket layer initialized
+[    0.975824] Bluetooth: SCO socket layer initialized
+[    0.984946] clocksource: Switched to clocksource mxc_timer1
+[    2.373182] VFS: Disk quotas dquot_6.6.0
+[    2.373704] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    2.575099] random: fast init done
+[    4.660412] NET: Registered PF_INET protocol family
+[    4.661621] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    4.669499] tcp_listen_portaddr_hash hash table entries: 256 (order: 1, 11264 bytes, linear)
+[    4.669727] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    4.670085] TCP bind hash table entries: 4096 (order: 5, 163840 bytes, linear)
+[    4.671568] TCP: Hash tables configured (established 4096 bind 4096)
+[    4.672810] UDP hash table entries: 256 (order: 2, 24576 bytes, linear)
+[    4.673184] UDP-Lite hash table entries: 256 (order: 2, 24576 bytes, linear)
+[    4.674558] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    4.683789] RPC: Registered named UNIX socket transport module.
+[    4.683946] RPC: Registered udp transport module.
+[    4.683999] RPC: Registered tcp transport module.
+[    4.684045] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    4.689501] PCI: CLS 0 bytes, default 64
+[    4.701801] Trying to unpack rootfs image as initramfs...
+[    4.709042] hw perfevents: enabled with armv7_cortex_a7 PMU driver, 5 counters available
+[    4.717422] rootfs image is not initramfs (no cpio magic); looks like an initrd
+[    4.749585] Initialise system trusted keyrings
+[    4.755841] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    4.929673] NFS: Registering the id_resolver key type
+[    4.930127] Key type id_resolver registered
+[    4.930269] Key type id_legacy registered
+[    4.931365] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    4.931635] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    4.932146] jffs2: version 2.2. (NAND) 漏 2001-2006 Red Hat, Inc.
+[    4.948967] fuse: init (API version 7.34)
+[    5.426377] Key type asymmetric registered
+[    5.426742] Asymmetric key parser 'x509' registered
+[    5.427640] io scheduler mq-deadline registered
+[    5.427720] io scheduler kyber registered
+[    5.639320] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 28, base_baud = 5000000) is a IMX
+[    5.641812] printk: console [ttymxc0] enabled
+[    5.670381] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 65, base_baud = 5000000) is a IMX
+[    5.745942] imx_rngc 2284000.rng: Freescale RNGB registered (HW revision 2.129)
+[    5.757475] random: crng init done
+[    6.079589] brd: module loaded
+[    6.282481] loop: module loaded
+[    6.367166] gpio_spi@0 enforce active low on chipselect handle
+[    6.561632] Freeing initrd memory: 32768K
+[    6.595276] CAN device driver interface
+[    6.608165] pps pps0: new PPS source ptp0
+[    6.636917] imx-sdma 20ec000.sdma: Direct firmware load for imx/sdma/sdma-imx6q.bin failed with error -2
+[    6.637096] imx-sdma 20ec000.sdma: Falling back to sysfs fallback for: imx/sdma/sdma-imx6q.bin
+[    6.655194] fec 20b4000.ethernet eth0: registered PHC device 0
+[    6.661585] usbcore: registered new interface driver r8152
+[    6.662030] usbcore: registered new interface driver lan78xx
+[    6.662586] usbcore: registered new interface driver asix
+[    6.662981] usbcore: registered new interface driver ax88179_178a
+[    6.663370] usbcore: registered new interface driver cdc_ether
+[    6.663980] usbcore: registered new interface driver smsc95xx
+[    6.664378] usbcore: registered new interface driver net1080
+[    6.665272] usbcore: registered new interface driver cdc_subset
+[    6.665706] usbcore: registered new interface driver zaurus
+[    6.666107] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    6.666712] usbcore: registered new interface driver cdc_ncm
+[    6.666767] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    6.666811] ehci-pci: EHCI PCI platform driver
+[    6.667779] usbcore: registered new interface driver usb-storage
+[    6.691858] SPI driver ads7846 has no spi_device_id for ti,tsc2046
+[    6.691930] SPI driver ads7846 has no spi_device_id for ti,ads7843
+[    6.691973] SPI driver ads7846 has no spi_device_id for ti,ads7845
+[    6.692013] SPI driver ads7846 has no spi_device_id for ti,ads7873
+[    6.702871] input: iMX6UL Touchscreen Controller as /devices/platform/soc/2000000.bus/2040000.tsc/input/input0
+[    6.738426] snvs_rtc 20cc000.snvs:snvs-rtc-lp: registered as rtc0
+[    6.738972] snvs_rtc 20cc000.snvs:snvs-rtc-lp: setting system clock to 1970-01-01T04:05:36 UTC (14736)
+[    6.740384] i2c_dev: i2c /dev entries driver
+[    6.748851] pxp 21cc000.pxp: Device registered as /dev/video0
+[    6.780669] Bluetooth: HCI UART driver ver 2.3
+[    6.780751] Bluetooth: HCI UART protocol H4 registered
+[    6.781057] Bluetooth: HCI UART protocol LL registered
+[    6.790743] sdhci: Secure Digital Host Controller Interface driver
+[    6.790807] sdhci: Copyright(c) Pierre Ossman
+[    6.790847] sdhci-pltfm: SDHCI platform and OF driver helper
+[    6.801223] sdhci-esdhc-imx 2190000.mmc: Got CD GPIO
+[    7.080929] usbcore: registered new interface driver usbhid
+[    7.080999] usbhid: USB HID core driver
+[    7.129243] mmc1: SDHCI controller on 2194000.mmc [2194000.mmc] using ADMA
+[    7.297346] NET: Registered PF_INET6 protocol family
+[    7.309845] mmc1: new DDR MMC card at address 0001
+[    7.322366] Segment Routing with IPv6
+[    7.322700] In-situ OAM (IOAM) with IPv6
+[    7.323203] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    7.330228] mmcblk1: mmc1:0001 SPeMMC 7.27 GiB 
+[    7.341119] NET: Registered PF_PACKET protocol family
+[    7.341317] can: controller area network core
+[    7.342020] NET: Registered PF_CAN protocol family
+[    7.342091] can: raw protocol
+[    7.342471] can: broadcast manager protocol
+[    7.342687] can: netlink gateway - max_hops=1
+[    7.344504] Key type dns_resolver registered
+[    7.396150]  mmcblk1: p1 p2 p3 p4
+[    7.423578] mmcblk1boot0: mmc1:0001 SPeMMC 4.00 MiB 
+[    7.427558] Registering SWP/SWPB emulation handler
+[    7.434019] Loading compiled-in X.509 certificates
+[    7.461253] mmcblk1boot1: mmc1:0001 SPeMMC 4.00 MiB 
+[    7.524197] mmc0: SDHCI controller on 2190000.mmc [2190000.mmc] using ADMA
+[    7.526945] mmcblk1rpmb: mmc1:0001 SPeMMC 4.00 MiB, chardev (243:0)
+[    7.774954] imx_usb 2184000.usb: No over current polarity defined
+[    7.805779] ci_hdrc ci_hdrc.1: EHCI Host Controller
+[    7.806592] ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 1
+[    7.838559] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+[    7.843703] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+[    7.843945] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    7.844013] usb usb1: Product: EHCI Host Controller
+[    7.844073] usb usb1: Manufacturer: Linux 5.15.30 ehci_hcd
+[    7.844127] usb usb1: SerialNumber: ci_hdrc.1
+[    7.860630] hub 1-0:1.0: USB hub found
+[    7.866218] hub 1-0:1.0: 1 port detected
+[    7.883147] imx_thermal 20c8000.anatop:tempmon: Industrial CPU temperature grade - max:105C critical:100C passive:95C
+[    7.890966] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    7.907669] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    7.909899] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    7.909955] platform regulatory.0: Falling back to sysfs fallback for: regulatory.db
+[    7.916488] ALSA device list:
+[    7.916838]   No soundcards found.
+[    7.921580] RAMDISK: lzo image found at block 0
+[   10.427707] EXT4-fs (ram0): mounted filesystem without journal. Opts: (null). Quota mode: none.
+[   10.428297] VFS: Mounted root (ext4 filesystem) on device 1:0.
+[   10.434059] devtmpfs: mounted
+[   10.438637] Freeing unused kernel image (initmem) memory: 1024K
+[   10.439886] Run /sbin/bootchartd as init process
+[   10.439932]   with arguments:
+[   10.439951]     /sbin/bootchartd
+[   10.439974]   with environment:
+[   10.439990]     HOME=/
+[   10.440010]     TERM=linux
+[   10.440029]     boot_flag=ramdisk
+[   10.592647] EXT4-fs (ram0): re-mounted. Opts: errors=remount-ro. Quota mode: none.
+[   38.272045] gpio_dvfs: disabling
+[   69.642463] imx-sdma 20ec000.sdma: external firmware not found, using ROM firmware
+[   69.649596] cfg80211: failed to load regulatory.db
