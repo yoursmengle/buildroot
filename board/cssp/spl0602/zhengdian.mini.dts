@@ -464,6 +464,7 @@
 	pinctrl-0 = <&pinctrl_pwm1>;
 	status = "okay";
 };
+
 &qspi {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_qspi>;
