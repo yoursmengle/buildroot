@@ -212,7 +212,7 @@
 			dma-names = "rx-tx";
 			status = "disabled";
 		};
-
+asdf
 		aips1: aips-bus@02000000 {
 			compatible = "fsl,aips-bus", "simple-bus";
 			#address-cells = <1>;
