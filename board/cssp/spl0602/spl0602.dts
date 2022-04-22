@@ -56,6 +56,7 @@
 			device_type = "cpu";
 			reg = <0>;
 			clock-latency = <61036>; /* two CLK32 periods */
+			clock-frequency = <528000000>;
 			operating-points = <
 				/* kHz	uV */
 				696000	1275000
@@ -984,7 +985,7 @@
 	};
 
 	memory {
-		reg = <0x80000000 0x10000000>; /* 256M */
+		reg = <0x80000000 0x20000000>; /* 512M */
 	};
 
     reserved-memory {

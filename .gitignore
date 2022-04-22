@@ -12,3 +12,4 @@
 *.rej
 *~
 *.pyc
+!.config
