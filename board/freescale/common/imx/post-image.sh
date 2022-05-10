@@ -106,6 +106,7 @@ main()
 		--config "${GENIMAGE_CFG}"
 
 	rm -f ${GENIMAGE_CFG}
+        cp output/images/rootfs.tar.gz /mnt/c/tftp/
 
 	exit $?
 }
