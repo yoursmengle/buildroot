@@ -14,6 +14,7 @@ cd ..
 genext2fs -b 32768 -N 30000 -d rootfs ramdisk
 lzop -9 ramdisk
 mv ramdisk.lzo /mnt/c/tftp
+rm ramdisk
 rm ./rootfs -rf
 ls -al /mnt/c/tftp/ramdisk.lzo
 
