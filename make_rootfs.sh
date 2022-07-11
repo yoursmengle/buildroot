@@ -1,1 +1,1 @@
-../cssp_config/make_rootfs.sh
+../cssp_config/009.make_commands/make_rootfs.sh
