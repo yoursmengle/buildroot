@@ -1,1 +1,0 @@
-../cssp_config/009.make_commands/make_rootfs.sh
